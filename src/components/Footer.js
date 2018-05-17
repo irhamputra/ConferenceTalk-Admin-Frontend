@@ -2,7 +2,10 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <h5>Made with Irham</h5>
+        <div className="container">
+            <hr/>
+            <h5>Made with love</h5>
+        </div>
     )
 };
 

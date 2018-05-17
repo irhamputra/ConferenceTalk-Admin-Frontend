@@ -3,23 +3,33 @@ import {Query, graphql} from "react-apollo";
 import query from '../Query/query';
 
 class TalkList extends Component {
-    render() {
-        console.log(this.props);
+    renderTalkList() {
         return (
             <Query query={query}>
-                {({ loading, error, data }) => {
+                {({loading, error, data}) => {
                     if (loading) return 'Loading...';
                     if (error) return `Error: ${error.message}`;
 
-                    return data.allTalks.map(talk => {
-                        return(
-                            <li key={talk._id}>
-                                {talk.name}
+                    return data.allTalks.map(({_id, name, description}) => {
+                        return (
+                            <li key={_id}>
+                                <p className="title is-small">{name}</p>
+                                <p className="subtitle">{description}</p>
                             </li>
                         )
                     })
                 }}
             </Query>
+        )
+    }
+
+    render() {
+        return (
+            <div className="container">
+                <ul>
+                    {this.renderTalkList()}
+                </ul>
+            </div>
         )
     }
 }

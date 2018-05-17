@@ -1,15 +1,17 @@
 import gql from 'graphql-tag';
 
-const Queries = gql`
+const allTalksQuery = gql`
     query AllTalks{
         allTalks{
+            _id,
             name,
             conferenceName,
             speakerName,
+            description,
             date,
             votes
         }
     }
 `;
 
-export default Queries;
+export default allTalksQuery;

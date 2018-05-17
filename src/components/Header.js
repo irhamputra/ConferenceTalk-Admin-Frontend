@@ -2,7 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return(
-        <h1>GraphQL Asia Conferences Talk</h1>
+        <div className="container">
+            <h1 className="title">GraphQL Asia Conferences Talk</h1>
+            <hr/>
+        </div>
     )
 };
 
