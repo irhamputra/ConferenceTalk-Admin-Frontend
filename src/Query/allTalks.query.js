@@ -15,13 +15,3 @@ const allTalksQuery = gql`
 `;
 
 export default allTalksQuery;
-
-const getTalkQuery = gql`
-    query GetTalk{
-        getTalk{
-            _id
-        }
-    }
-`;
-
-export default getTalkQuery;

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Query, graphql} from "react-apollo";
-import query from '../Query/query';
+import query from '../Query/allTalks.query';
 
 class TalkList extends Component {
     renderTalkList() {
