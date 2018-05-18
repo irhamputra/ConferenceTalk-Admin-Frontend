@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-class TalkDetail extends Component{
-    render(){
+class TalkDetail extends Component {
+    render() {
         // TODO: Get _id and Render the details of Talks from API
-        return(
+        return (
             <div>
                 Talk details
             </div>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 // Import UI
 import Header from './components/Header';
@@ -6,8 +6,8 @@ import TalkList from './components/TalkList';
 import Footer from './components/Footer';
 
 class App extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <Header/>
                 <TalkList/>

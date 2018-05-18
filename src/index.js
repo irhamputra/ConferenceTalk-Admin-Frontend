@@ -10,7 +10,7 @@ import {HttpLink} from "apollo-link-http";
 
 const client = new ApolloClient({
     link: new HttpLink({
-        uri: 'http://localhost:8080/graphql',
+        uri: 'http://localhost:8081/graphql',
         headers: {
             accept: "application/json"
         }
@@ -19,9 +19,9 @@ const client = new ApolloClient({
 });
 
 const Root = () => {
-    return(
+    return (
         <ApolloProvider client={client}>
-            <App />
+            <App/>
         </ApolloProvider>
     )
 };
