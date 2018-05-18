@@ -12,10 +12,10 @@ class TalkList extends Component {
 
                     return data.allTalks.map(({_id, name, description}) => {
                         return (
-                            <li key={_id}>
+                            <ol key={_id}>
                                 <p className="title is-small">{name}</p>
                                 <p className="subtitle">{description}</p>
-                            </li>
+                            </ol>
                         )
                     })
                 }}
