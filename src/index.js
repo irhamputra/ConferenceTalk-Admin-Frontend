@@ -10,7 +10,7 @@ import {HttpLink} from "apollo-link-http";
 
 const client = new ApolloClient({
     link: new HttpLink({
-        uri: 'http://localhost:8081/graphql',
+        uri: 'http://localhost:8000/graphql',
         headers: {
             accept: "application/json"
         }
@@ -18,6 +18,7 @@ const client = new ApolloClient({
     cache: new InMemoryCache()
 });
 
+// TODO: add React-Router-Dom after Apollo Provider and test the link :id for TalkDetail
 const Root = () => {
     return (
         <ApolloProvider client={client}>
